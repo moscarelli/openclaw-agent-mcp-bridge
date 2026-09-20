@@ -1,0 +1,35 @@
+{
+  "name": "openclaw-agent-mcp-bridge",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Experimental unofficial MCP bridge for OpenClaw agents and sessions",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "openclaw-agent-mcp-bridge": "src/server/main.mjs"
+  },
+  "scripts": {
+    "check": "node scripts/check-syntax.mjs && node --test \"test/**/*.test.mjs\"",
+    "test": "node --test \"test/**/*.test.mjs\"",
+    "security:scan": "node scripts/security-scan.mjs",
+    "package:inspect": "npm pack --dry-run --json"
+  },
+  "license": "MIT",
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md",
+    "docs/ARCHITECTURE.md",
+    "docs/THREAT_MODEL.md",
+    "docs/RELEASE_POLICY.md",
+    "docs/REPOSITORY_SECURITY_STANDARD.md",
+    "docs/LIVE_VALIDATION.md"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "zod": "4.6.5"
+  }
+}

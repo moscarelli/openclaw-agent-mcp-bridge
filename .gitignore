@@ -1,0 +1,21 @@
+node_modules/
+# Exceção: fixture de teste que reproduz um layout de shim npm real.
+# Este "node_modules" é sintético (sem dependências reais) e é necessário para
+# o teste de resolução do locator (test/locator.test.mjs).
+!test/fixtures/shim-layout/bin/node_modules/
+!test/fixtures/shim-layout/bin/node_modules/**
+coverage/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+*.sqlite*
+.state/
+.tmp/
+.DS_Store
+Thumbs.db
+
+# Local Kiro IDE configuration (agents/steering/hooks). Personal, environment-
+# specific, and out of scope for the repository.
+.kiro/
