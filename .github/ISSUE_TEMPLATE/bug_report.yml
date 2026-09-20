@@ -1,0 +1,50 @@
+name: Bug report
+description: Report a reproducible defect without including sensitive data
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include credentials, session keys, transcripts, personal paths, or private logs. Report security issues using SECURITY.md instead.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: input
+    id: bridge-version
+    attributes:
+      label: Bridge version or commit
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Sanitized OS, Node.js version, and OpenClaw version.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Provide the smallest safe sequence that reproduces the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Sanitized output
+      description: Remove secrets, paths, identifiers, session data, and message content.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I removed credentials, session data, personal information, and local paths.
+          required: true
+        - label: This is not a security vulnerability requiring private disclosure.
+          required: true
