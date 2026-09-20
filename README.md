@@ -180,8 +180,12 @@ These items are not implemented in the current phase.
 
 ## Contributing
 
-Contributions are welcome. Please read [`CONTRIBUTING.md`](CONTRIBUTING.md) and
-keep changes within the project's read-only-by-default, opt-in-mutation design.
+Contributions are welcome. Read [`CONTRIBUTING.md`](CONTRIBUTING.md), the
+[`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md), and [`SUPPORT.md`](SUPPORT.md).
+Project ownership and decisions are documented in
+[`GOVERNANCE.md`](GOVERNANCE.md), and public changes in
+[`CHANGELOG.md`](CHANGELOG.md). Keep contributions within the project's
+read-only-by-default, opt-in-mutation design.
 
 ## Security reporting
 
